@@ -2,6 +2,7 @@ start "" https://laptop-updates.brave.com/latest/winx64
 start "" https://www.intel.com/content/www/us/en/download-center/home.html
 start "" https://guides.frame.work/Guide/Windows+10+Installation+on+the+Framework+Laptop+DIY+Edition/92#s453
 start "" https://wiki.ameliorated.info/documentation_21H1
+start "" https://github.com/clsid2/mpc-hc/releases
 wmic useraccount where name='user' rename kes
 net user kes *
 net user Administrator *
