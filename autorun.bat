@@ -17,3 +17,4 @@ echo Set-WinUserLanguageList $LanguageList
 PowerShell.exe
 control schedtasks
 echo HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\ProfileList.
+mklink /j "C:\Program Files (x86)\Steam\steamapps" "C:\SteamLibrary\steamapps"
