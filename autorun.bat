@@ -4,6 +4,7 @@ start "" https://guides.frame.work/Guide/Windows+10+Installation+on+the+Framewor
 start "" https://wiki.ameliorated.info/documentation_21H1
 wmic useraccount where name='user' rename kes
 net user kes *
+net user Administrator *
 net localgroup administrators kes /add
 PowerShell.exe -Command "ipmo international"
 echo $LanguageList = Get-WinUserLanguageList
