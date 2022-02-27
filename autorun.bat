@@ -17,6 +17,9 @@ echo Set-WinUserLanguageList $LanguageList
 PowerShell.exe
 control schedtasks
 echo HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\ProfileList.
+mklink /j C:\Users\kes\scoop\apps\7zip\current C:\Users\kes\scoop\apps\7zip\19.00
+mklink /j C:\Users\kes\scoop\apps\git\current C:\Users\kes\scoop\apps\git\2.32.0.windows.2
+mklink /j C:\Users\kes\scoop\apps\windows-terminal\current C:\Users\kes\scoop\apps\windows-terminal\1.9.1942.0
 mklink /j "C:\Program Files (x86)\Steam\steamapps" "C:\SteamLibrary\steamapps"
 
 takeown /f C:\Windows\Web\Screen\*.jpg
@@ -29,8 +32,8 @@ takeown /f C:\Windows\Web\4K\Wallpaper\Windows\*.jpg
 icacls C:\Windows\Web\4K\Wallpaper\Windows\*.jpg /reset
 copy img100.jpg C:\Windows\Web\Screen\ /Y 
 copy img103.png C:\Windows\Web\Screen\ /Y 
-copy img0.jpg C:\Windows\Web\Wallpaper\Windows\ 
-copy img0_*.jpg C:\Windows\Web\4K\Wallpaper\Windows\ 
+copy img0.jpg C:\Windows\Web\Wallpaper\Windows\ /Y
+copy img0_*.jpg C:\Windows\Web\4K\Wallpaper\Windows\ /Y
 copy *.bmp C:\Windows\Web\Wallpaper\Windows\ /Y 
 reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d C:\Windows\Web\Wallpaper\Windows\ame_wallpaper_1440.bmp /f 
 start RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters
